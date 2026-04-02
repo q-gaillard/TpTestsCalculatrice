@@ -16,5 +16,7 @@ public class CalculatriceTests
         Assert.AreEqual(12, resultat);
         double resultatDivision = calc.Division(10, 2);
         Assert.AreEqual(5, resultatDivision);
+        resultatDivision = calc.Division(10, 0);
+        Assert.AreEqual(0, resultatDivision);
     }
 }
